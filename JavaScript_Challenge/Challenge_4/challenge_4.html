@@ -1,0 +1,36 @@
+<html>
+  <head>
+      <title>Challenge 4</title>
+      <script>
+        var  number = 0;
+        var hours = 0;
+        var mins = 0;
+        var time = "";
+
+        function Time()
+        {
+          number = document.getElementById("number").value;
+
+          hours = number / 60;
+        //  console.log(Math.floor(hours));
+          mins = number % 60;
+          //  console.log(mins);
+
+            time="" + Math.floor(hours) + " hour(s) " + mins + " minutes";
+            console.log(time);
+        }
+      </script>
+    <link href="challenge_4.css" rel="stylesheet">
+  </head>
+
+<body>
+  <div class="page">
+  <b>  <header>Challenge 4</header></b>
+
+    <div class= "input">
+      Enter a number: <input type = "text" id="number">
+      <button onclick="Time();">Get Time</button>
+    </div>
+  </div>
+</body>
+</html>

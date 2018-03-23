@@ -1,0 +1,55 @@
+header{
+	font-size:300%;
+	margin: 1%;
+	padding-left: 90px;
+	/*border-radius:25px;
+	;
+
+	margin-bottom: 30px;*/
+}
+p{
+	padding-left: 130px;
+	color: red;
+}
+#value{
+  	padding-left: 0px;
+}
+.outer{
+border:solid 1px;
+background:#ff1493;
+height:44.5%;
+width: 32%;
+padding-top: 40px;
+border-radius: 10px;
+text-align:center;
+}
+
+/*
+.display{
+position: relative;
+left: 0px;
+top: 10px;
+height: 55px;
+width:60px;
+text-align: right;
+}*/
+
+#number{
+	height:35px;
+	text-align:right;
+	box-shadow: inset 4px 3px 2px 1px;
+}
+
+.buttons, .display{
+	text-align: center;
+}
+.buttons input{
+	width: 99.7px;
+	height: 50px;
+	margin-top: 10px;
+	border: 2px solid gray;
+	background-color: white;
+}
+#minus, #multiply, #divide{
+	background-color: silver;
+}

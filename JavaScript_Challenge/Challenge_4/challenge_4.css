@@ -1,0 +1,14 @@
+header{
+	font-size:300%;
+	margin: 1%;
+	padding-left: 90px;
+	/*border-radius:25px;
+	;
+
+	margin-bottom: 30px;*/
+}
+.page{
+  background-color:plum;
+  height: 50%;
+  width: 50%;
+}

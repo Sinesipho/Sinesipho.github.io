@@ -1,0 +1,18 @@
+header{
+	font-size:300%;
+	margin: 1%;
+	padding-left: 90px;
+}
+p{
+	padding-left: 130px;
+}
+#area{
+  color: red;
+  	padding-left: 100px;
+}
+.page input{
+  margin-left: 50px;
+}
+body{
+	background-color: #f7d4d6;
+}

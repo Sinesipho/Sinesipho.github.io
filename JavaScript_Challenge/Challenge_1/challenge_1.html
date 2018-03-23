@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Challenge 1</title>
+<link rel = "stylesheet" href="challenge_1.css">
+<script>
+ str1 = "";
+  function numZero()  {
+	   num1 = document.getElementById("zero").value;
+	   str1 = str1 + num1.toString();
+	   document.getElementById("number").value = str1;
+	}
+
+    function numOne()  {
+	   num1 = document.getElementById("one").value;
+	   str1 = str1 + num1.toString();
+	   document.getElementById("number").value = str1;
+	}
+
+   function numTwo()  {
+	   num2 = document.getElementById("two").value;
+	   str1 = str1 + num2.toString();
+	   document.getElementById("number").value = str1;
+	}
+
+	function numThree()  {
+	   num3 = document.getElementById("three").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function numFour()  {
+	   num3 = document.getElementById("four").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function numFive()  {
+	   num3 = document.getElementById("five").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function numSix()  {
+	   num3 = document.getElementById("six").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function numSeven()  {
+	   num3 = document.getElementById("seven").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function numEight()  {
+	   num3 = document.getElementById("eight").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function numNine()  {
+	   num3 = document.getElementById("nine").value;
+	   str1 = str1 + num3.toString();
+	   document.getElementById("number").value = str1;
+	}
+	function btnPlus()  {
+	   val1 = parseInt(document.getElementById("number").value);
+	   str1 = "";
+	   document.getElementById("number").value = "";
+	   oper = "+";
+	}
+	function btnMinus()  {
+	   val1 = parseInt(document.getElementById("number").value);
+	   str1 = "";
+	   document.getElementById("number").value = "";
+	   oper = "-";
+	}
+	function btnMuliply()  {
+	   val1 = parseInt(document.getElementById("number").value);
+	   str1 = "";
+	   document.getElementById("number").value = "";
+	   oper = "*";
+	}
+	function btnDivide()  {
+	   val1 = parseInt(document.getElementById("number").value);
+	   str1 = "";
+	   document.getElementById("number").value = "";
+	   oper = "/";
+	}
+	function btnClear()  {
+	  var clear;
+	  str1 = "";
+	  clear = 0;
+	  document.getElementById("number").value = clear;
+	}
+	function btnCE()  {
+	  var ce;
+
+	  ce = 0;
+	  document.getElementById("number").value = ce;
+	}
+
+	function btnResult()  {
+	  val2 = parseInt(document.getElementById("number").value);
+	  if(oper == "+")
+		answer = val1 + val2;
+	  else if(oper == "-")
+		answer = val1 - val2;
+	  else if(oper == "*")
+		answer = val1 * val2;
+	  else if(oper == "/")
+		answer = val1 / val2;
+	   document.getElementById("number").value = answer;
+
+
+	  if(answer == 75) {
+		console.log('Sum is: ' + answer);
+		return true;}
+	else if(val1 ==75 ){
+		console.log('First Number is: ' + val1);
+		return true;}
+	else if( val2 == 75){
+	   console.log('Second Number is: ' + val2);
+		return true;}
+	}
+
+  </script>
+</head>
+<body>
+<div class="page">
+<b><header>Challenge 1</header></b>
+<b><p><i>Do not use the grey buttons</i></p></b>
+<p id="value">If one of the numbers is 75 or their sum is 75 the value is displayed in the console
+  <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <b>Don't add more than two numbers e.g 1 + 2 + 2</b></p>
+<div class = "outer">
+	<div class = "display">
+		<input type = "text" name = "number" id = "number" size="54">
+	</div>
+
+	<div class="buttons">
+		<input type = "Button" name = "one" value = "1" id ="one" onclick = "numOne();">
+		<input type = "Button" name = "two" value = "2" id ="two" onclick = "numTwo();">
+		<input type = "Button" name = "three" value = "3" id ="three" onclick = "numThree();">
+		<input type = "Button" name = "minus" value = "+" id ="plus" onclick = "btnPlus();">
+<br>
+		<input type = "Button" name = "four" value = "4" id ="four" onclick = "numFour();">
+		<input type = "Button" name = "five" value = "5" id ="five" onclick = "numFive();">
+		<input type = "Button" name = "six" value = "6" id ="six" onclick = "numSix();">
+		<input type = "Button" name = "multiply" value = "-" id ="minus" onclick = "">
+<br>
+		<input type = "Button" name = "seven" value = "7" id ="seven" onclick = "numSeven();">
+		<input type = "Button" name = "eight" value = "8" id ="eight" onclick = "numEight();">
+		<input type = "Button" name = "clear" value = "9" id ="nine" onclick = "numNine();">
+		<input type = "Button" name = "divide" value = "*" id ="multiply" onclick = "">
+<br>
+		<input type = "Button" name = "clear" value = "C" id = "clear" onclick = "btnClear();">
+		<input type = "Button" name = "zero" value = "0" id ="zero" onclick = "numZero();">
+		<input type = "Button" name = "result" value = "=" id = "result" onclick = "btnResult();">
+		<input type = "Button" name = "divide" value = "/" id ="divide" onclick = "">
+	</div>
+</div>
+</div>
+</body>
+</html>
