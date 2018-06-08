@@ -1,0 +1,18 @@
+.left,.right{
+width:auto;
+height:1200px;
+}
+h1{
+font-family: Verdana, Helvetica,sans-serif;
+font-size: 4em;
+padding:0;
+margin:0;
+margin-top: 400px;
+margin-right:25px;
+}
+h2{
+	font-size:1.25em;
+}
+.images a img{
+	display:block;
+}
